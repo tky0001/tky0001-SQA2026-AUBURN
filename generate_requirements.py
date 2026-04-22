@@ -15,7 +15,8 @@ OUTPUT_JSON = args.output
 CFR_SECTION = args.cfr
 
 # ---------- Read File ----------
-with open(INPUT_MD, "r") as f:
+# FIX: Add encoding="utf-8"
+with open(INPUT_MD, "r", encoding="utf-8") as f:
     lines = [line.strip() for line in f if line.strip()]
 
 requirements = []
@@ -23,7 +24,6 @@ current_req = None
 
 # ---------- Parse ----------
 for line in lines:
-
     # Capture REQ ID
     req_match = re.search(r"→\s*(REQ-[\d\.]+-\d+)", line)
     if req_match:
@@ -52,7 +52,7 @@ for line in lines:
         })
 
 # ---------- Save ----------
-with open(OUTPUT_JSON, "w") as f:
+with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
     json.dump(requirements, f, indent=2)
 
 print(f"Saved {len(requirements)} requirements → {OUTPUT_JSON}")
