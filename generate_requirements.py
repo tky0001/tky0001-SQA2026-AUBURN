@@ -15,7 +15,7 @@ OUTPUT_JSON = args.output
 CFR_SECTION = args.cfr
 
 # ---------- Read File ----------
-# FIX: Add encoding="utf-8"
+# Add encoding="utf-8"
 with open(INPUT_MD, "r", encoding="utf-8") as f:
     lines = [line.strip() for line in f if line.strip()]
 
