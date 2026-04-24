@@ -1,0 +1,19 @@
+"Conduct hazard analysis"
+
+"Identify known hazards"
+
+"Identify reasonably foreseeable hazards"
+
+"Biological hazards"
+
+"Chemical hazards"
+
+"Physical hazards"
+
+"Assess severity and probability"
+
+"Evaluate environmental pathogens"
+
+"Formulation of the food"
+
+"Facility and equipment condition"
