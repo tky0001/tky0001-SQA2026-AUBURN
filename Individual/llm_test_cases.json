@@ -1,144 +1,164 @@
 {
   "metadata": {
     "model": "mistralai/Mistral-7B-Instruct-v0.2",
-    "fp16_load_time_seconds": 18.763063430786133,
+    "fp16_load_time_seconds": 13.590681076049805,
     "fp16_memory_gb": 0,
-    "quantized_load_time_seconds": 39.80637192726135,
+    "quantized_load_time_seconds": 45.949381589889526,
     "quantized_memory_gb": 0
   },
   "test_cases": {
     "fp16": [
       {
-        "test_case_id": "TC-001",
+        "test_case_id": "TC-FP16-001",
         "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "description": "Verify - (1) Conduct hazard analysis for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001A",
+        "expected_output": "Compliant result for REQ-117.130-001A",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 516.3675479888916
+        "notes": "Generated test case for REQ-117.130-001A",
+        "inference_time": 774.6572625637054
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-FP16-002",
+        "requirement_id": "REQ-117.130-001B",
+        "description": "Verify - Identify known hazards for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001B",
+        "expected_output": "Compliant result for REQ-117.130-001B",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 516.7002749443054
+        "notes": "Generated test case for REQ-117.130-001B",
+        "inference_time": 799.6151220798492
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-FP16-003",
+        "requirement_id": "REQ-117.130-002A",
+        "description": "Verify - Biological hazards for compliance",
+        "input_data": "Test data for requirement REQ-117.130-002A",
+        "expected_output": "Compliant result for REQ-117.130-002A",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 514.947681427002
+        "notes": "Generated test case for REQ-117.130-002A",
+        "inference_time": 827.3412668704987
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-FP16-004",
+        "requirement_id": "REQ-117.130-003A1",
+        "description": "Verify - (i) Assess severity and probability of hazard occurrence for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003A1",
+        "expected_output": "Compliant result for REQ-117.130-003A1",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 496.20836424827576
+        "notes": "Generated test case for REQ-117.130-003A1",
+        "inference_time": 828.3841781616211
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-FP16-005",
+        "requirement_id": "REQ-117.130-003B1",
+        "description": "Verify - (i) Formulation of the food for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003B1",
+        "expected_output": "Compliant result for REQ-117.130-003B1",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 516.7453224658966
+        "notes": "Generated test case for REQ-117.130-003B1",
+        "inference_time": 824.0892307758331
       }
     ],
     "quantized": [
       {
-        "test_case_id": "TC-001",
+        "test_case_id": "TC-QT-001",
         "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "description": "Verify - (1) Conduct hazard analysis for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001A",
+        "expected_output": "Compliant result for REQ-117.130-001A",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 506.8203794956207
+        "notes": "Generated test case for REQ-117.130-001A",
+        "inference_time": 767.0243983268738
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-QT-002",
+        "requirement_id": "REQ-117.130-001B",
+        "description": "Verify - Identify known hazards for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001B",
+        "expected_output": "Compliant result for REQ-117.130-001B",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 500.5474202632904
+        "notes": "Generated test case for REQ-117.130-001B",
+        "inference_time": 756.2942216396332
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-QT-003",
+        "requirement_id": "REQ-117.130-002A",
+        "description": "Verify - Biological hazards for compliance",
+        "input_data": "Test data for requirement REQ-117.130-002A",
+        "expected_output": "Compliant result for REQ-117.130-002A",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 491.210223197937
+        "notes": "Generated test case for REQ-117.130-002A",
+        "inference_time": 872.7237613201141
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-QT-004",
+        "requirement_id": "REQ-117.130-003A1",
+        "description": "Verify - (i) Assess severity and probability of hazard occurrence for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003A1",
+        "expected_output": "Compliant result for REQ-117.130-003A1",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 486.0735640525818
+        "notes": "Generated test case for REQ-117.130-003A1",
+        "inference_time": 1016.7430591583252
       },
       {
-        "test_case_id": "TC-001",
-        "requirement_id": "REQ-117.130-001A",
-        "description": "Verify hazard analysis is conducted",
-        "input_data": "Food facility producing canned tuna",
-        "expected_output": "Written hazard analysis document",
+        "test_case_id": "TC-QT-005",
+        "requirement_id": "REQ-117.130-003B1",
+        "description": "Verify - (i) Formulation of the food for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003B1",
+        "expected_output": "Compliant result for REQ-117.130-003B1",
         "steps": [
-          "Review facility records",
-          "Check for hazard analysis"
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
         ],
-        "notes": "Analysis must identify biological/chemical/physical hazards",
-        "inference_time": 496.96055841445923
+        "notes": "Generated test case for REQ-117.130-003B1",
+        "inference_time": 974.3733923435211
       }
     ]
   }
