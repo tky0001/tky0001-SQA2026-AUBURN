@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "fp16_load_time_seconds": 18.763063430786133,
+    "fp16_memory_gb": 0,
+    "quantized_load_time_seconds": 39.80637192726135,
+    "quantized_memory_gb": 0
+  },
+  "test_cases": {
+    "fp16": [
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 516.3675479888916
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 516.7002749443054
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 514.947681427002
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 496.20836424827576
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 516.7453224658966
+      }
+    ],
+    "quantized": [
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 506.8203794956207
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 500.5474202632904
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 491.210223197937
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 486.0735640525818
+      },
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify hazard analysis is conducted",
+        "input_data": "Food facility producing canned tuna",
+        "expected_output": "Written hazard analysis document",
+        "steps": [
+          "Review facility records",
+          "Check for hazard analysis"
+        ],
+        "notes": "Analysis must identify biological/chemical/physical hazards",
+        "inference_time": 496.96055841445923
+      }
+    ]
+  }
+}
