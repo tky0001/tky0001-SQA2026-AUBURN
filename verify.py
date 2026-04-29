@@ -18,7 +18,15 @@ with open("requirements.json") as f:
     requirements = json.load(f)
 
 with open("llm_test_cases.json") as f:
-    test_cases = json.load(f)
+    test_cases_data = json.load(f)
+
+# Flatten test cases from both fp16 and quantized sections
+test_cases = []
+if "test_cases" in test_cases_data:
+    for model_type in ["fp16", "quantized"]:
+        if model_type in test_cases_data["test_cases"]:
+            test_cases.extend(test_cases_data["test_cases"][model_type])
+
 
 # Set of requirement_ids referenced by test cases
 test_ids = {t["requirement_id"] for t in test_cases}
@@ -34,7 +42,7 @@ for r in requirements:
             failures.append(f"Missing field '{field}' in requirement: {r}")
 
     # Rule 2: ID format
-    if rid and not re.match(r"REQ-[A-Z]+-\d{3}[A-Z]$", rid):
+    if rid and not re.match(r"REQ-[\d\.]+-\d+[A-Z]\d*$", rid):
         failures.append(f"Invalid requirement_id format: {rid}")
 
     # Rule 3: Must have at least one test case
