@@ -1,4 +1,3 @@
-# scripts/generate_requirements.py
 import json
 import re
 import argparse
