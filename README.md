@@ -21,3 +21,8 @@ Utilizing GitHub actions, `validate.py` and `verify.py` are run on `test_cases.j
 Download `generate_requirements.py` and `CFR-117.130.md` to local environment
 Run script with the following command, replacing inputs as necessary : 
 - python generate_requirements.py --input "Input (CFR) markdown file" --output "Output file name" --cfr "CFR section to reference" --expected "Output file name"
+
+### Generate Test Cases
+Download `generate_test_cases.py`, `10_selected_rules.txt` (and edit to your preference) and analyze `expected_structure.json` file generated from `generate_requirements.py`.
+Run script with command :
+- python generate_test_cases.py --requirements requirements.json --rules 10_selected_rules.txt --output test_cases.json 
