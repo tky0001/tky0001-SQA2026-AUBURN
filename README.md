@@ -9,7 +9,7 @@ Script also generates 'expected_structure.json', outlining the format of the par
 
 ### Generate Minimal Test Cases
 
-10 selected 'atomic-rules.txt' are used to generate test cases via '
+'10_selected_rules.txt' are used to generate test cases via 'generate_test_cases.py'
 
 ### Verification and Validation
 
