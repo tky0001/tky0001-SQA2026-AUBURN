@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "quantized_load_time_seconds": 22.652360916137695,
+    "quantized_memory_gb": 0
+  },
+  "test_cases": {
+    "quantized": [
+      {
+        "test_case_id": "TC-QT-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description": "Verify - (1) Conduct hazard analysis for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001A",
+        "expected_output": "Compliant result for REQ-117.130-001A",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-001A",
+        "inference_time": 744.9067687988281
+      },
+      {
+        "test_case_id": "TC-QT-002",
+        "requirement_id": "REQ-117.130-001B",
+        "description": "Verify - Identify known hazards for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001B",
+        "expected_output": "Compliant result for REQ-117.130-001B",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-001B",
+        "inference_time": 745.7731866836548
+      },
+      {
+        "test_case_id": "TC-QT-003",
+        "requirement_id": "REQ-117.130-001C",
+        "description": "Verify - Identify reasonably foreseeable hazards for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001C",
+        "expected_output": "Compliant result for REQ-117.130-001C",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-001C",
+        "inference_time": 738.4440355300903
+      },
+      {
+        "test_case_id": "TC-QT-004",
+        "requirement_id": "REQ-117.130-001D",
+        "description": "Verify - Evaluate hazards using data, experience, reports for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001D",
+        "expected_output": "Compliant result for REQ-117.130-001D",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-001D",
+        "inference_time": 763.104724407196
+      },
+      {
+        "test_case_id": "TC-QT-005",
+        "requirement_id": "REQ-117.130-001E",
+        "description": "Verify - Determine hazards requiring preventive controls for compliance",
+        "input_data": "Test data for requirement REQ-117.130-001E",
+        "expected_output": "Compliant result for REQ-117.130-001E",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-001E",
+        "inference_time": 793.0196425914764
+      },
+      {
+        "test_case_id": "TC-QT-006",
+        "requirement_id": "REQ-117.130-002A",
+        "description": "Verify - Occur naturally for compliance",
+        "input_data": "Test data for requirement REQ-117.130-002A",
+        "expected_output": "Compliant result for REQ-117.130-002A",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-002A",
+        "inference_time": 800.7569425106049
+      },
+      {
+        "test_case_id": "TC-QT-007",
+        "requirement_id": "REQ-117.130-002B",
+        "description": "Verify - Unintentionally introduced for compliance",
+        "input_data": "Test data for requirement REQ-117.130-002B",
+        "expected_output": "Compliant result for REQ-117.130-002B",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-002B",
+        "inference_time": 792.7382125854492
+      },
+      {
+        "test_case_id": "TC-QT-008",
+        "requirement_id": "REQ-117.130-003A1",
+        "description": "Verify - (i) Assess severity and probability of hazard occurrence for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003A1",
+        "expected_output": "Compliant result for REQ-117.130-003A1",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-003A1",
+        "inference_time": 794.1041779518127
+      },
+      {
+        "test_case_id": "TC-QT-009",
+        "requirement_id": "REQ-117.130-003B1",
+        "description": "Verify - (i) Formulation of the food for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003B1",
+        "expected_output": "Compliant result for REQ-117.130-003B1",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-003B1",
+        "inference_time": 802.335453748703
+      },
+      {
+        "test_case_id": "TC-QT-010",
+        "requirement_id": "REQ-117.130-003B2",
+        "description": "Verify - (ii) Facility and equipment condition, function, design for compliance",
+        "input_data": "Test data for requirement REQ-117.130-003B2",
+        "expected_output": "Compliant result for REQ-117.130-003B2",
+        "steps": [
+          "Prepare test environment",
+          "Execute verification",
+          "Review results",
+          "Document findings"
+        ],
+        "notes": "Generated test case for REQ-117.130-003B2",
+        "inference_time": 801.6934397220612
+      }
+    ]
+  }
+}
