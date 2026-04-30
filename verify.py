@@ -17,7 +17,7 @@ Rules:
 with open("requirements.json") as f:
     requirements = json.load(f)
 
-with open("llm_test_cases.json") as f:
+with open("test_cases.json") as f:
     test_cases_data = json.load(f)
 
 # Flatten test cases from both fp16 and quantized sections
