@@ -5,7 +5,7 @@ import time
 import argparse
 from huggingface_hub import login
 
-login(token="[HIDDEN FOR GITHUB]")
+login(token="[ HIDDEN FOR GITHUB ]")
 
 class LLMTestCaseGenerator:
     def __init__(self, model_name="mistralai/Mistral-7B-Instruct-v0.2"):
@@ -14,8 +14,8 @@ class LLMTestCaseGenerator:
     def load_quantized_model(self):
         start_time = time.time()
     
-        self.quantized_tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        self.quantized_model = AutoModelForCausalLM.from_pretrained(
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+        self.model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
             torch_dtype=torch.float16,
             device_map="cpu",  
@@ -44,7 +44,7 @@ Example test case format:
 
 Now generate a test case for {requirement['requirement_id']}. Output ONLY valid JSON:"""
 
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
+        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
         
         start_time = time.time()
         with torch.no_grad():
@@ -89,6 +89,7 @@ Now generate a test case for {requirement['requirement_id']}. Output ONLY valid 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--requirements", "-r", required=True, help="Path to requirements.json")
+    parser.add_argument("--rules", "-rl", required=True, help="Path to 10_selected_rules.txt file")
     parser.add_argument("--output", "-o", default="test_cases.json")
     args = parser.parse_args()
     
@@ -96,21 +97,20 @@ def main():
     with open(args.requirements, 'r', encoding='utf-8') as f:
         all_requirements = json.load(f)
     
-    # Atomic Rules from Task 1
-    selected_rules = [
-        {"id": "REQ-117.130-001A", "desc": "Conduct hazard analysis"},
-        {"id": "REQ-117.130-001B", "desc": "Identify known hazards"},
-        {"id": "REQ-117.130-002A", "desc": "Biological hazards"},
-        {"id": "REQ-117.130-003A1", "desc": "Assess severity and probability"},
-        {"id": "REQ-117.130-003B1", "desc": "Formulation of the food"}
-    ]
-    
-    # Load requirement object
+    with open(args.rules, 'r', encoding='utf-8') as f:
+        selected_rule_ids = [line.strip() for line in f if line.strip()]
+
+    # Build lookup dictionary for quick access
+    req_lookup = {r['requirement_id']: r for r in all_requirements}
+
+    # Get the full requirement objects
     requirements = []
-    for rule in selected_rules:
-        req = next((r for r in all_requirements if r['requirement_id'] == rule['id']), None)
-        if req:
-            requirements.append(req)
+    for rule_id in selected_rule_ids:
+        if rule_id in req_lookup:
+            requirements.append(req_lookup[rule_id])
+        else:
+            print(f"Warning: Requirement ID '{rule_id}' not found in requirements.json")
+    
     
     print(f"Selected {len(requirements)} atomic rules:")
     for req in requirements:
@@ -120,34 +120,19 @@ def main():
     generator = LLMTestCaseGenerator()
     
     # Load models
-    fp16_time, fp16_memory = generator.load_fp16_model()
     quantized_time, quantized_memory = generator.load_quantized_model()
     
     # Generate test cases
     results = {
-        "fp16": [],
         "quantized": []
     }
-    
-    # Generating the FP16 test cases
-    for i, req in enumerate(requirements, 1):
-        test_case_id = f"TC-FP16-{i:03d}"
-        test_case = generator.generate_test_case(
-            generator.fp16_model, 
-            generator.fp16_tokenizer, 
-            req, 
-            test_case_id
-        )
-        if test_case:
-            results["fp16"].append(test_case)
-            print(f"Generated {test_case_id} for {req['requirement_id']}")
     
     # Generating the quantized test cases
     for i, req in enumerate(requirements, 1):
         test_case_id = f"TC-QT-{i:03d}"
         test_case = generator.generate_test_case(
-            generator.quantized_model, 
-            generator.quantized_tokenizer, 
+            generator.model, 
+            generator.tokenizer, 
             req, 
             test_case_id
         )
@@ -159,8 +144,6 @@ def main():
     output = {
         "metadata": {
             "model": generator.model_name,
-            "fp16_load_time_seconds": fp16_time,
-            "fp16_memory_gb": fp16_memory,
             "quantized_load_time_seconds": quantized_time,
             "quantized_memory_gb": quantized_memory
         },
