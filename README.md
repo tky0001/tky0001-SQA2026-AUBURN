@@ -14,6 +14,7 @@ Script also generates `expected_structure.json`, outlining the format of the par
 ### Verification and Validation
 
 Utilizing GitHub actions, `validate.py` and `verify.py` are run on `test_cases.json` each time a new commit is pushed to the repo.
+Verification script automatically checks for every test case present in `requirements.json`, resulting in an "error" when ran on `generate_test_cases.py`. This can be avoided by adding all rules from `requirements.json` to the `10_selected_rules.txt` file.
 
 ## Reproducibility  
 
